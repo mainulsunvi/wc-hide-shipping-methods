@@ -1,0 +1,1 @@
+# wc-hide-shipping-methods
