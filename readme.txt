@@ -49,6 +49,9 @@ A: You can submit issues or feature requests on the [Public GitHub Repository](h
 
 == Changelog ==
 
+= 1.7 =
+* New - Add HPOS compatibility
+
 = 1.6 =
 * New - Refactored code with guard clauses for better readability.
 * New - Updated plugin and contributor information.
