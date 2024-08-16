@@ -136,3 +136,14 @@ function wchfsm_declare_woocommerce_block_compatibility() {
 	}
 }
 add_action( 'before_woocommerce_init', 'wchfsm_declare_woocommerce_block_compatibility' );
+
+
+// Plugin Action Lins
+function wchfsm_plugin_action_links( $actions ) {
+	$actions[] = '<a href="' . esc_url( admin_url( 'admin.php?page=wc-settings&tab=shipping&section=options' ) ) . '">' . esc_html__( 'Settings', 'wc-hide-shipping-methods' ) . '</a>';
+	$actions[] = '<a href="#" target="_blank">' . esc_html__( 'Documentation', 'wc-hide-shipping-methods' ) . '</a>';
+
+	return $actions;
+}
+
+add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'wchfsm_plugin_action_links' );
